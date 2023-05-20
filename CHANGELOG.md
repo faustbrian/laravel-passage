@@ -8,9 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [0.2.1] - 2023-05-20
+### Changed
+- separate api and auth clients
+
+
 ## [0.2.0] - 2023-05-20
 
 ## 0.1.0 - 2023-05-19
 
-[Unreleased]: https://github.com/BombenProdukt/package_slug/compare/0.2.0...HEAD
+[Unreleased]: https://github.com/BombenProdukt/package_slug/compare/0.2.1...HEAD
+[0.2.1]: https://github.com/BombenProdukt/package_slug/compare/0.2.0...0.2.1
 [0.2.0]: https://github.com/BombenProdukt/package_slug/compare/0.1.0...0.2.0
