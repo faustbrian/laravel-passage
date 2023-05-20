@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace BombenProdukt\Passage\Authentication;
 
-use BombenProdukt\Passage\Client;
-
 final readonly class Authentication
 {
-    public function __construct(private readonly Client $client)
+    private readonly Client $client;
+
+    public function __construct(array $config)
     {
-        //
+        $this->client = new Client($config);
     }
 
     public function apps(): Apps

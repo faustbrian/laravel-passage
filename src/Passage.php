@@ -9,20 +9,18 @@ use BombenProdukt\Passage\Management\Management;
 
 final readonly class Passage
 {
-    private Client $client;
-
-    public function __construct(array $config)
+    public function __construct(private readonly array $config)
     {
-        $this->client = new Client($config);
+        //
     }
 
     public function authentication(): Authentication
     {
-        return new Authentication($this->client);
+        return new Authentication($this->config);
     }
 
     public function management(): Management
     {
-        return new Management($this->client);
+        return new Management($this->config);
     }
 }

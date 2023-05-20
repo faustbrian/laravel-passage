@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace BombenProdukt\Passage\Management;
 
-use BombenProdukt\Passage\Client;
-
 final readonly class Management
 {
-    public function __construct(private readonly Client $client)
+    private readonly Client $client;
+
+    public function __construct(array $config)
     {
-        //
+        $this->client = new Client($config);
     }
 
     public function admins(): Admins

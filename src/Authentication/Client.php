@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BombenProdukt\Passage;
+namespace BombenProdukt\Passage\Authentication;
 
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Http\Client\Response;
@@ -12,12 +12,9 @@ final class Client
 {
     private PendingRequest $client;
 
-    private PendingRequest $clientByApp;
-
     public function __construct(private readonly array $config)
     {
-        $this->client = Http::baseUrl('https://api.passage.id/v1/apps');
-        $this->clientByApp = Http::baseUrl('https://api.passage.id/v1/apps/'.$config['appId']);
+        $this->client = Http::baseUrl('https://auth.passage.id/v1/apps/'.$config['appId']);
     }
 
     public function withToken(string $token): static
@@ -30,19 +27,9 @@ final class Client
         return $this->request('get', $path, $data);
     }
 
-    public function getByApp(string $path, array $data = []): Response
-    {
-        return $this->requestByApp('get', $path, $data);
-    }
-
     public function delete(string $path, array $data = []): Response
     {
         return $this->request('delete', $path, $data);
-    }
-
-    public function deleteByApp(string $path, array $data = []): Response
-    {
-        return $this->requestByApp('delete', $path, $data);
     }
 
     public function patch(string $path, array $data = []): Response
@@ -50,28 +37,13 @@ final class Client
         return $this->request('patch', $path, $data);
     }
 
-    public function patchByApp(string $path, array $data = []): Response
-    {
-        return $this->requestByApp('patch', $path, $data);
-    }
-
     public function post(string $path, array $data = []): Response
     {
         return $this->request('post', $path, $data);
     }
 
-    public function postByApp(string $path, array $data = []): Response
-    {
-        return $this->requestByApp('post', $path, $data);
-    }
-
     private function request(string $method, string $path, array $data = []): Response
     {
         return $this->client->{$method}($path, $data)->throw();
-    }
-
-    private function requestByApp(string $method, string $path, array $data = []): Response
-    {
-        return $this->clientByApp->{$method}($path, $data)->throw();
     }
 }
