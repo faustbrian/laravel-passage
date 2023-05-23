@@ -13,7 +13,7 @@ final readonly class AuthenticatedUsers
 
     public function currentUser(): array
     {
-        return $this->client->get(path: 'currentuser')->json();
+        return $this->client->get(path: 'currentuser')->json('user');
     }
 
     public function listDevices(): array
