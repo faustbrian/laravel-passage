@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [0.3.0] - 2023-05-23
+### Added
+- proof of concept of magic link login controllers
+
+
 ## [0.2.5] - 2023-05-23
 ### Fixed
 - return `user` object from `currentUser`
@@ -37,7 +42,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 0.1.0 - 2023-05-19
 
-[Unreleased]: https://github.com/BombenProdukt/package_slug/compare/0.2.5...HEAD
+[Unreleased]: https://github.com/BombenProdukt/package_slug/compare/0.3.0...HEAD
+[0.3.0]: https://github.com/BombenProdukt/package_slug/compare/0.2.5...0.3.0
 [0.2.5]: https://github.com/BombenProdukt/package_slug/compare/0.2.4...0.2.5
 [0.2.4]: https://github.com/BombenProdukt/package_slug/compare/0.2.3...0.2.4
 [0.2.3]: https://github.com/BombenProdukt/package_slug/compare/0.2.2...0.2.3
