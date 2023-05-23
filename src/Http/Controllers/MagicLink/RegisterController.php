@@ -5,10 +5,8 @@ declare(strict_types=1);
 namespace BombenProdukt\Passage\Http\Controllers\MagicLink;
 
 use App\Models\User;
-use App\Providers\RouteServiceProvider;
 use BombenProdukt\Passage\Facades\Passage;
 use Illuminate\Auth\Events\Registered;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
@@ -19,7 +17,7 @@ final class RegisterController
         return view('passage::magic-link.register');
     }
 
-    public function store(Request $request): RedirectResponse
+    public function store(Request $request): View
     {
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
@@ -35,6 +33,8 @@ final class RegisterController
 
         event(new Registered($user));
 
-        return redirect(RouteServiceProvider::HOME);
+        return view('passage::magic-link.register-pending', [
+            'email' => $request->email,
+        ]);
     }
 }

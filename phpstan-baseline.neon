@@ -116,34 +116,9 @@ parameters:
 			path: src/Http/Controllers/MagicLink/ActivateController.php
 
 		-
-			message: "#^Access to constant HOME on an unknown class App\\\\Providers\\\\RouteServiceProvider\\.$#"
-			count: 1
-			path: src/Http/Controllers/MagicLink/LoginController.php
-
-		-
-			message: "#^Method BombenProdukt\\\\Passage\\\\Http\\\\Controllers\\\\MagicLink\\\\LoginController\\:\\:store\\(\\) should return Illuminate\\\\Http\\\\RedirectResponse but returns Illuminate\\\\Http\\\\RedirectResponse\\|Illuminate\\\\Routing\\\\Redirector\\.$#"
-			count: 1
-			path: src/Http/Controllers/MagicLink/LoginController.php
-
-		-
 			message: "#^Parameter \\#1 \\$identifier of method BombenProdukt\\\\Passage\\\\Authentication\\\\MagicLinks\\:\\:login\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Http/Controllers/MagicLink/LoginController.php
-
-		-
-			message: "#^Access to constant HOME on an unknown class App\\\\Providers\\\\RouteServiceProvider\\.$#"
-			count: 1
-			path: src/Http/Controllers/MagicLink/LogoutController.php
-
-		-
-			message: "#^Method BombenProdukt\\\\Passage\\\\Http\\\\Controllers\\\\MagicLink\\\\LogoutController\\:\\:__invoke\\(\\) should return Illuminate\\\\Http\\\\RedirectResponse but returns Illuminate\\\\Http\\\\RedirectResponse\\|Illuminate\\\\Routing\\\\Redirector\\.$#"
-			count: 1
-			path: src/Http/Controllers/MagicLink/LogoutController.php
-
-		-
-			message: "#^Access to constant HOME on an unknown class App\\\\Providers\\\\RouteServiceProvider\\.$#"
-			count: 1
-			path: src/Http/Controllers/MagicLink/RegisterController.php
 
 		-
 			message: "#^Call to static method create\\(\\) on an unknown class App\\\\Models\\\\User\\.$#"
@@ -152,11 +127,6 @@ parameters:
 
 		-
 			message: "#^Class App\\\\Models\\\\User not found\\.$#"
-			count: 1
-			path: src/Http/Controllers/MagicLink/RegisterController.php
-
-		-
-			message: "#^Method BombenProdukt\\\\Passage\\\\Http\\\\Controllers\\\\MagicLink\\\\RegisterController\\:\\:store\\(\\) should return Illuminate\\\\Http\\\\RedirectResponse but returns Illuminate\\\\Http\\\\RedirectResponse\\|Illuminate\\\\Routing\\\\Redirector\\.$#"
 			count: 1
 			path: src/Http/Controllers/MagicLink/RegisterController.php
 

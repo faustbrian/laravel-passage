@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace BombenProdukt\Passage\Http\Controllers\MagicLink;
 
-use App\Providers\RouteServiceProvider;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -19,6 +18,6 @@ final class LogoutController
 
         $request->session()->regenerateToken();
 
-        return redirect(RouteServiceProvider::HOME);
+        return redirect('/');
     }
 }

@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace BombenProdukt\Passage\Http\Controllers\MagicLink;
 
-use App\Providers\RouteServiceProvider;
 use BombenProdukt\Passage\Facades\Passage;
-use Illuminate\Http\RedirectResponse;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
-use Illuminate\View\View;
 
 final class LoginController
 {
@@ -17,7 +15,7 @@ final class LoginController
         return view('passage::magic-link.login');
     }
 
-    public function store(Request $request): RedirectResponse
+    public function store(Request $request): View
     {
         $request->validate([
             'email' => ['required', 'string', 'email'],
@@ -27,6 +25,8 @@ final class LoginController
 
         $request->session()->regenerate();
 
-        return redirect(RouteServiceProvider::HOME);
+        return view('passage::magic-link.login-pending', [
+            'email' => $request->email,
+        ]);
     }
 }
