@@ -49,7 +49,7 @@ final readonly class MagicLinks
         )->json('auth_result');
     }
 
-    public function authenticate(string $magicLink): array
+    public function activate(string $magicLink): array
     {
         return $this->client->patch(
             path: 'magic-link/activate',
