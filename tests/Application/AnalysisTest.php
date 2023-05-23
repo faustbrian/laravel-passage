@@ -13,5 +13,11 @@ use BombenProdukt\PackagePowerPack\TestBench\AbstractAnalysisTestCase;
  */
 final class AnalysisTest extends AbstractAnalysisTestCase
 {
-    //
+    protected static function getIgnored(): array
+    {
+        return [
+            'App\Models\User',
+            'App\Providers\RouteServiceProvider',
+        ];
+    }
 }
