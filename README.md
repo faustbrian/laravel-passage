@@ -90,6 +90,8 @@ Route::post('/passage/login', function (Request $request): void {
 Route::post('/passage/register', function (Request $request): void {
     Passage::authentication()->magicLink()->register($request->get('email'));
 
+    User::create(['email' => $request->get('email')]);
+
     $request->session()->flash('status', 'We have e-mailed your magic link!');
 
     return redirect()->back();
@@ -99,7 +101,7 @@ Route::get('/passage/{YOUR_APP_ID}', function (Request $request) {
     $response = Passage::authentication()->magicLink()->activate($request->query('psg_magic_link'));
     $currentUser = Passage::authentication()->authenticatedUsers($response['auth_token'])->currentUser();
 
-    Auth::login(User::where('email', $currentUser['user']['email'])->firstOrFail());
+    Auth::login(User::where('email', $currentUser['email'])->firstOrFail());
 
     $request->session()->flash('status', 'You have been logged in!');
 
