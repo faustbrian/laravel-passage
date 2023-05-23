@@ -62,8 +62,10 @@ Please review the contents of [our test suite](/tests) for detailed usage exampl
 
 declare(strict_types=1);
 
+use App\Models\User;
 use BombenProdukt\Passage\Facades\Passage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -95,6 +97,9 @@ Route::post('/passage/register', function (Request $request): void {
 
 Route::get('/passage/{YOUR_APP_ID}', function (Request $request) {
     $response = Passage::authentication()->magicLink()->activate($request->query('psg_magic_link'));
+    $currentUser = Passage::authentication()->authenticatedUsers($response['auth_token'])->currentUser();
+
+    Auth::login(User::where('email', $currentUser['user']['email'])->firstOrFail());
 
     $request->session()->flash('status', 'You have been logged in!');
 

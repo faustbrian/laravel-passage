@@ -14,7 +14,7 @@ final class Client
 
     public function __construct(
         private readonly array $config,
-        private readonly ?string $token = null,
+        ?string $token = null,
     ) {
         $this->client = Http::baseUrl('https://auth.passage.id/v1/apps/'.$config['appId']);
 
