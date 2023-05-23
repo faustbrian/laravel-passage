@@ -52,3 +52,56 @@ $ php artisan vendor:publish --tag="laravel-passage-config"
 ## Usage
 
 Please review the contents of [our test suite](/tests) for detailed usage examples.
+
+## Examples
+
+### Authentication with Magic Link
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use BombenProdukt\Passage\Facades\Passage;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+Route::post('/passage/login', function (Request $request): void {
+    Passage::authentication()->magicLink()->login($request->get('email'));
+
+    $request->session()->flash('status', 'We have e-mailed your magic link!');
+
+    return redirect()->back();
+});
+
+Route::post('/passage/register', function (Request $request): void {
+    Passage::authentication()->magicLink()->register($request->get('email'));
+
+    $request->session()->flash('status', 'We have e-mailed your magic link!');
+
+    return redirect()->back();
+});
+
+Route::get('/passage/{YOUR_APP_ID}', function (Request $request) {
+    $response = Passage::authentication()->magicLink()->activate($request->query('psg_magic_link'));
+
+    $request->session()->flash('status', 'You have been logged in!');
+
+    return redirect($response['redirect_url']);
+});
+
+Route::get('/passage/{YOUR_APP_ID}/dashboard', function (Request $request): void {
+    return view('dashboard');
+});
+```
