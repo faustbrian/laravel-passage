@@ -12,14 +12,20 @@ final class Client
 {
     private PendingRequest $client;
 
-    public function __construct(private readonly array $config)
-    {
+    public function __construct(
+        private readonly array $config,
+        private readonly ?string $token = null,
+    ) {
         $this->client = Http::baseUrl('https://auth.passage.id/v1/apps/'.$config['appId']);
+
+        if (\is_string($token)) {
+            $this->client->withToken($token);
+        }
     }
 
     public function withToken(string $token): static
     {
-        return new self($this->config, $this->client->withToken($token));
+        return new self($this->config, $token);
     }
 
     public function get(string $path, array $data = []): Response
