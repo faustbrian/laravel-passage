@@ -23,9 +23,6 @@
 
 This project was created by, and is maintained by [BombenProdukt](https://github.com/BombenProdukt), and is a package to integrate Passage by 1Password with Laravel. Be sure to browse through the [changelog](CHANGELOG.md), [code of conduct](.github/CODE_OF_CONDUCT.md), [contribution guidelines](.github/CONTRIBUTING.md), [license](LICENSE), and [security policy](.github/SECURITY.md).
 
-> **Warning**
-> This package is still in development and is not ready for production use. Use at your own risk.
-
 ## Installation
 
 > **Note**
