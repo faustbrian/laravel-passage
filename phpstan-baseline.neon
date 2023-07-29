@@ -46,6 +46,11 @@ parameters:
 			path: src/Authentication/AuthenticatedUsers.php
 
 		-
+			message: "#^Variable method call on Illuminate\\\\Http\\\\Client\\\\PendingRequest\\.$#"
+			count: 1
+			path: src/Authentication/Client.php
+
+		-
 			message: "#^Method BombenProdukt\\\\Passage\\\\Authentication\\\\MagicLinks\\:\\:activate\\(\\) should return array but returns mixed\\.$#"
 			count: 1
 			path: src/Authentication/MagicLinks.php
@@ -106,6 +111,11 @@ parameters:
 			path: src/Http/Controllers/MagicLink/ActivateController.php
 
 		-
+			message: "#^Dynamic call to static method Illuminate\\\\Session\\\\Store\\:\\:flash\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/MagicLink/ActivateController.php
+
+		-
 			message: "#^Method BombenProdukt\\\\Passage\\\\Http\\\\Controllers\\\\MagicLink\\\\ActivateController\\:\\:__invoke\\(\\) should return Illuminate\\\\Http\\\\RedirectResponse but returns Illuminate\\\\Http\\\\RedirectResponse\\|Illuminate\\\\Routing\\\\Redirector\\.$#"
 			count: 1
 			path: src/Http/Controllers/MagicLink/ActivateController.php
@@ -114,6 +124,11 @@ parameters:
 			message: "#^Parameter \\#1 \\$magicLink of method BombenProdukt\\\\Passage\\\\Authentication\\\\MagicLinks\\:\\:activate\\(\\) expects string, array\\|string\\|null given\\.$#"
 			count: 1
 			path: src/Http/Controllers/MagicLink/ActivateController.php
+
+		-
+			message: "#^Dynamic call to static method Illuminate\\\\Http\\\\Request\\:\\:validate\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/MagicLink/LoginController.php
 
 		-
 			message: "#^Parameter \\#1 \\$identifier of method BombenProdukt\\\\Passage\\\\Authentication\\\\MagicLinks\\:\\:login\\(\\) expects string, mixed given\\.$#"
@@ -127,6 +142,11 @@ parameters:
 
 		-
 			message: "#^Class App\\\\Models\\\\User not found\\.$#"
+			count: 1
+			path: src/Http/Controllers/MagicLink/RegisterController.php
+
+		-
+			message: "#^Dynamic call to static method Illuminate\\\\Http\\\\Request\\:\\:validate\\(\\)\\.$#"
 			count: 1
 			path: src/Http/Controllers/MagicLink/RegisterController.php
 
@@ -203,6 +223,11 @@ parameters:
 		-
 			message: "#^Class BombenProdukt\\\\Passage\\\\Management\\\\Client constructor invoked with 2 parameters, 1 required\\.$#"
 			count: 1
+			path: src/Management/Client.php
+
+		-
+			message: "#^Variable method call on Illuminate\\\\Http\\\\Client\\\\PendingRequest\\.$#"
+			count: 2
 			path: src/Management/Client.php
 
 		-
