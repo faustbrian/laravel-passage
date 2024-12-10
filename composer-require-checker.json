@@ -1,0 +1,27 @@
+{
+    "symbol-whitelist": [
+        "array",
+        "bool",
+        "false",
+        "int",
+        "null",
+        "self",
+        "string",
+        "true",
+        "App\\Models\\User",
+        "event",
+        "Illuminate\\Auth\\Events\\Registered",
+        "Illuminate\\Contracts\\View\\View",
+        "Illuminate\\Http\\Client\\PendingRequest",
+        "Illuminate\\Http\\Client\\Response",
+        "Illuminate\\Http\\RedirectResponse",
+        "Illuminate\\Http\\Request",
+        "Illuminate\\Support\\Facades\\Auth",
+        "Illuminate\\Support\\Facades\\Facade",
+        "Illuminate\\Support\\Facades\\Http",
+        "Illuminate\\Support\\Facades\\Route",
+        "Illuminate\\View\\View",
+        "redirect",
+        "view"
+    ]
+}

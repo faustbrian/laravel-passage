@@ -1,0 +1,676 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method in\\(\\) on iterable\\<SplFileInfo\\>\\.$#"
+			count: 1
+			path: .php-cs-fixer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\Apps\\:\\:get\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/Apps.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\Apps\\:\\:get\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/Apps.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\AuthenticatedUsers\\:\\:changeEmail\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/AuthenticatedUsers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\AuthenticatedUsers\\:\\:changeEmail\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/AuthenticatedUsers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\AuthenticatedUsers\\:\\:changePhone\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/AuthenticatedUsers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\AuthenticatedUsers\\:\\:changePhone\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/AuthenticatedUsers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\AuthenticatedUsers\\:\\:currentUser\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/AuthenticatedUsers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\AuthenticatedUsers\\:\\:currentUser\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/AuthenticatedUsers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\AuthenticatedUsers\\:\\:finishWebAuthnAddDevice\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/AuthenticatedUsers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\AuthenticatedUsers\\:\\:finishWebAuthnAddDevice\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/AuthenticatedUsers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\AuthenticatedUsers\\:\\:listDevices\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/AuthenticatedUsers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\AuthenticatedUsers\\:\\:listDevices\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/AuthenticatedUsers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\AuthenticatedUsers\\:\\:revokeDevice\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/AuthenticatedUsers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\AuthenticatedUsers\\:\\:revokeDevice\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/AuthenticatedUsers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\AuthenticatedUsers\\:\\:startWebAuthnAddDevice\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/AuthenticatedUsers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\AuthenticatedUsers\\:\\:startWebAuthnAddDevice\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/AuthenticatedUsers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\AuthenticatedUsers\\:\\:updateDevice\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/AuthenticatedUsers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\AuthenticatedUsers\\:\\:updateDevice\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/AuthenticatedUsers.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\Authentication\\:\\:__construct\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/Authentication.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\Client\\:\\:__construct\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\Client\\:\\:delete\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\Client\\:\\:get\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\Client\\:\\:patch\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\Client\\:\\:post\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\Client\\:\\:request\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/Client.php
+
+		-
+			message: "#^Variable method call on Illuminate\\\\Http\\\\Client\\\\PendingRequest\\.$#"
+			count: 1
+			path: src/Authentication/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\MagicLinks\\:\\:activate\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/MagicLinks.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\MagicLinks\\:\\:activate\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/MagicLinks.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\MagicLinks\\:\\:login\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/MagicLinks.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\MagicLinks\\:\\:login\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/MagicLinks.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\MagicLinks\\:\\:register\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/MagicLinks.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\MagicLinks\\:\\:register\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/MagicLinks.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\MagicLinks\\:\\:status\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/MagicLinks.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\MagicLinks\\:\\:status\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/MagicLinks.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\SessionManagement\\:\\:createRefreshToken\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/SessionManagement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\SessionManagement\\:\\:createRefreshToken\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/SessionManagement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\SessionManagement\\:\\:revokeRefreshToken\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/SessionManagement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\SessionManagement\\:\\:revokeRefreshToken\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/SessionManagement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\Users\\:\\:info\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\Users\\:\\:info\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\WebAuthn\\:\\:finishWebAuthnLogin\\(\\) has parameter \\$handshakeResponse with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/WebAuthn.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\WebAuthn\\:\\:finishWebAuthnLogin\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/WebAuthn.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\WebAuthn\\:\\:finishWebAuthnLogin\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/WebAuthn.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\WebAuthn\\:\\:finishWebAuthnRegister\\(\\) has parameter \\$handshakeResponse with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/WebAuthn.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\WebAuthn\\:\\:finishWebAuthnRegister\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/WebAuthn.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\WebAuthn\\:\\:finishWebAuthnRegister\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/WebAuthn.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\WebAuthn\\:\\:startWebAuthnLogin\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/WebAuthn.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\WebAuthn\\:\\:startWebAuthnLogin\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/WebAuthn.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\WebAuthn\\:\\:startWebAuthnRegister\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Authentication/WebAuthn.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Authentication\\\\WebAuthn\\:\\:startWebAuthnRegister\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Authentication/WebAuthn.php
+
+		-
+			message: "#^Call to static method where\\(\\) on an unknown class App\\\\Models\\\\User\\.$#"
+			count: 1
+			path: src/Http/Controllers/MagicLink/ActivateController.php
+
+		-
+			message: "#^Dynamic call to static method Illuminate\\\\Session\\\\Store\\:\\:flash\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/MagicLink/ActivateController.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Http\\\\Controllers\\\\MagicLink\\\\ActivateController\\:\\:__invoke\\(\\) should return Illuminate\\\\Http\\\\RedirectResponse but returns Illuminate\\\\Http\\\\RedirectResponse\\|Illuminate\\\\Routing\\\\Redirector\\.$#"
+			count: 1
+			path: src/Http/Controllers/MagicLink/ActivateController.php
+
+		-
+			message: "#^Parameter \\#1 \\$magicLink of method BaseCodeOy\\\\Passage\\\\Authentication\\\\MagicLinks\\:\\:activate\\(\\) expects string, array\\|string\\|null given\\.$#"
+			count: 1
+			path: src/Http/Controllers/MagicLink/ActivateController.php
+
+		-
+			message: "#^Dynamic call to static method Illuminate\\\\Http\\\\Request\\:\\:validate\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/MagicLink/LoginController.php
+
+		-
+			message: "#^Parameter \\#1 \\$identifier of method BaseCodeOy\\\\Passage\\\\Authentication\\\\MagicLinks\\:\\:login\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Http/Controllers/MagicLink/LoginController.php
+
+		-
+			message: "#^Call to static method create\\(\\) on an unknown class App\\\\Models\\\\User\\.$#"
+			count: 1
+			path: src/Http/Controllers/MagicLink/RegisterController.php
+
+		-
+			message: "#^Class App\\\\Models\\\\User not found\\.$#"
+			count: 1
+			path: src/Http/Controllers/MagicLink/RegisterController.php
+
+		-
+			message: "#^Dynamic call to static method Illuminate\\\\Http\\\\Request\\:\\:validate\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/MagicLink/RegisterController.php
+
+		-
+			message: "#^Parameter \\#1 \\$identifier of method BaseCodeOy\\\\Passage\\\\Authentication\\\\MagicLinks\\:\\:register\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Http/Controllers/MagicLink/RegisterController.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Admins\\:\\:create\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Admins.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Admins\\:\\:create\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Admins.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Admins\\:\\:delete\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Admins.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Admins\\:\\:delete\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Admins.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Admins\\:\\:get\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Admins.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Admins\\:\\:get\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Admins.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Admins\\:\\:list\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Admins.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Admins\\:\\:list\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Admins.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\ApiKeys\\:\\:create\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/ApiKeys.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\ApiKeys\\:\\:create\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/ApiKeys.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\ApiKeys\\:\\:delete\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/ApiKeys.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\ApiKeys\\:\\:delete\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/ApiKeys.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\ApiKeys\\:\\:list\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/ApiKeys.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\ApiKeys\\:\\:list\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/ApiKeys.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Apps\\:\\:claim\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Apps.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Apps\\:\\:claim\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Apps.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Apps\\:\\:create\\(\\) has parameter \\$body with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Apps.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Apps\\:\\:create\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Apps.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Apps\\:\\:create\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Apps.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Apps\\:\\:delete\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Apps.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Apps\\:\\:delete\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Apps.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Apps\\:\\:get\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Apps.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Apps\\:\\:get\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Apps.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Apps\\:\\:list\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Apps.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Apps\\:\\:list\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Apps.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Apps\\:\\:update\\(\\) has parameter \\$body with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Apps.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Apps\\:\\:update\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Apps.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Apps\\:\\:update\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Apps.php
+
+		-
+			message: "#^Class BaseCodeOy\\\\Passage\\\\Management\\\\Client constructor invoked with 2 parameters, 1 required\\.$#"
+			count: 1
+			path: src/Management/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Client\\:\\:__construct\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Client\\:\\:delete\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Client\\:\\:deleteByApp\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Client\\:\\:get\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Client\\:\\:getByApp\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Client\\:\\:patch\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Client\\:\\:patchByApp\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Client\\:\\:post\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Client\\:\\:postByApp\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Client\\:\\:request\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Client\\:\\:requestByApp\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Client.php
+
+		-
+			message: "#^Variable method call on Illuminate\\\\Http\\\\Client\\\\PendingRequest\\.$#"
+			count: 2
+			path: src/Management/Client.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\EmbeddedMagicLinks\\:\\:create\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/EmbeddedMagicLinks.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\EmbeddedMagicLinks\\:\\:create\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/EmbeddedMagicLinks.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\EmbeddedMagicLinks\\:\\:create\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/EmbeddedMagicLinks.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Events\\:\\:list\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Events.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Events\\:\\:list\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Events.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Management\\:\\:__construct\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Management.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:activate\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:activate\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:create\\(\\) has parameter \\$userMetadata with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:create\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:create\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:deactivate\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:deactivate\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:delete\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:delete\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:get\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:get\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:import\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:import\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:list\\(\\) has parameter \\$query with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:list\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:list\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:revokeRefreshTokens\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:revokeRefreshTokens\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:update\\(\\) has parameter \\$userMetadata with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:update\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Management\\\\Users\\:\\:update\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Management/Users.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\Passage\\:\\:__construct\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Passage.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\PassageManager\\:\\:createConnection\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/PassageManager.php
+
+		-
+			message: "#^Cannot access offset 'config' on Illuminate\\\\Contracts\\\\Container\\\\Container\\.$#"
+			count: 1
+			path: src/ServiceProvider.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Passage\\\\ServiceProvider\\:\\:provides\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/ServiceProvider.php
+
+		-
+			message: "#^Method Tests\\\\Application\\\\AnalysisTest\\:\\:getIgnored\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: tests/Application/AnalysisTest.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 1
+			path: tests/Pest.php
